@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>909902178628-36vo3ndptq4o0321q1vshf7q8ek52jfd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.909902178628-36vo3ndptq4o0321q1vshf7q8ek52jfd</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>909902178628-832nco0jlg6baorsbsmttkr2dmvl04a6.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBtUPDpBhpV4OdIrL2AsI7rWevBTVbza9o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>909902178628</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.garimabothra.HeadCountUser</string>
+	<key>PROJECT_ID</key>
+	<string>chirpattendance</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chirpattendance.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:909902178628:ios:636c19ce56d3c68670cf11</string>
+	<key>DATABASE_URL</key>
+	<string>https://chirpattendance.firebaseio.com</string>
+</dict>
+</plist>
