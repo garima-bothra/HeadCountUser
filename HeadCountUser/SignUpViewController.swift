@@ -33,7 +33,7 @@ class SignUpViewController: UIViewController{
 
                  UserDefaults.standard.setValue(user?.uid, forKeyPath: "uid")
                 
-                self.performSegue(withIdentifier: "signtouser", sender: nil)
+                self.performSegue(withIdentifier: "goToChirpUser", sender: nil)
 
             }
         }

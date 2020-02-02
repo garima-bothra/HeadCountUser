@@ -13,10 +13,18 @@ var roomref = ref
 //let attendeeref = ref
 class ChirpViewController: UIViewController {
 
-   
+  
+    //
+//    @IBAction func settingsButtonPressed(_ sender: Any) {
+//        performSegue(withIdentifier: "goToSettings", sender: Any.self)
+//    }
     @IBOutlet weak var userLabel: UILabel!
     
     @IBOutlet weak var chirpStatusLabel: UILabel!
+    
+    @IBAction func settingsButtonPressed(_ sender: Any) {
+          performSegue(withIdentifier: "goToSettings", sender: Any.self)
+    }
     
     let chirp: ChirpSDK = ChirpSDK(appKey: CHIRP_APP_KEY, andSecret: CHIRP_APP_SECRET)!
     
@@ -42,6 +50,11 @@ if (userLabel != nil)
         }
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+      // 1
+      let nav = self.navigationController?.navigationBar
+        
+    }
    
     @IBAction func chirpButtonPressed(_ sender: Any) {
         if(chirp.state != CHIRP_SDK_STATE_RUNNING){
@@ -55,7 +68,7 @@ if (userLabel != nil)
                
                 ref.child("rooms").child(identifier!).observeSingleEvent(of: .value, with: { (snapshot) in
                     roomref = ref.child("rooms").child(identifier!)
-                    self.performSegue(withIdentifier: "meetingPopover", sender:Any.self)
+                    self.performSegue(withIdentifier: "meetingPop", sender:Any.self)
                 }){ (error) in
                 print(error.localizedDescription)
                 }

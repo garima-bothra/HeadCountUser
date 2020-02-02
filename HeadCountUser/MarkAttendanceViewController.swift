@@ -52,18 +52,17 @@ class MarkAttendanceViewController: UIViewController {
             let value = snapshot.value as? NSDictionary
                 let suid = value?["uid"] as? String ?? ""
                 let userid =  value?["user_id"] as? String ?? ""
-                if (suid == ""){
-                    roomref.child("attendees").child(UIDevice.current.identifierForVendor!.uuidString).child("user_id").setValue(customer.userid)
-                    ProgressHUD.showSuccess("Attendance Marked")
-                   
-                }
-                else{
+                if (suid != ""){
                     if(uid == suid){
                         ProgressHUD.showError("Already marked present")
                     }
                     else{
                         ProgressHUD.showError("This device has already been used to mark attendance")
-                    }
+                        }
+                }
+                else{
+  roomref.child("attendees").child(UIDevice.current.identifierForVendor!.uuidString).child("user_id").setValue(customer.userid)
+                   ProgressHUD.showSuccess("Attendance Marked")
                 }
         })
          dismiss(animated: true, completion: nil)

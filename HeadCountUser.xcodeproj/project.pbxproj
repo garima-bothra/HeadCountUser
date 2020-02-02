@@ -16,9 +16,11 @@
 		8606412323E5C02F00F04ACD /* SomethingWrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606412223E5C02F00F04ACD /* SomethingWrongViewController.swift */; };
 		8606412523E5EFA600F04ACD /* MarkAttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606412423E5EFA600F04ACD /* MarkAttendanceViewController.swift */; };
 		8606412723E6495B00F04ACD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606412623E6495A00F04ACD /* LoginViewController.swift */; };
+		8606414A23E6FAEA00F04ACD /* EditDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606414923E6FAEA00F04ACD /* EditDetailsViewController.swift */; };
+		8606414C23E751ED00F04ACD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8606414B23E751ED00F04ACD /* Launch Screen.storyboard */; };
 		862280ED23C4EE77001028D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862280EC23C4EE77001028D7 /* AppDelegate.swift */; };
 		862280EF23C4EE77001028D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862280EE23C4EE77001028D7 /* SceneDelegate.swift */; };
-		862280F123C4EE77001028D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862280F023C4EE77001028D7 /* ViewController.swift */; };
+		862280F123C4EE77001028D7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862280F023C4EE77001028D7 /* SettingsViewController.swift */; };
 		862280F423C4EE77001028D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862280F223C4EE77001028D7 /* Main.storyboard */; };
 		862280F923C4EE7A001028D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862280F723C4EE7A001028D7 /* LaunchScreen.storyboard */; };
 		8622810123C4F1B9001028D7 /* Red_Hat_Display in Resources */ = {isa = PBXBuildFile; fileRef = 8622810023C4F1B9001028D7 /* Red_Hat_Display */; };
@@ -39,10 +41,12 @@
 		8606412423E5EFA600F04ACD /* MarkAttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAttendanceViewController.swift; sourceTree = "<group>"; };
 		8606412623E6495A00F04ACD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8606412823E678E300F04ACD /* HeadCountUser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeadCountUser-Bridging-Header.h"; sourceTree = "<group>"; };
+		8606414923E6FAEA00F04ACD /* EditDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailsViewController.swift; sourceTree = "<group>"; };
+		8606414B23E751ED00F04ACD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		862280E923C4EE77001028D7 /* HeadCountUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadCountUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		862280EC23C4EE77001028D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		862280EE23C4EE77001028D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		862280F023C4EE77001028D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		862280F023C4EE77001028D7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		862280F323C4EE77001028D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		862280F823C4EE7A001028D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		862280FA23C4EE7A001028D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,14 +106,16 @@
 				862280EC23C4EE77001028D7 /* AppDelegate.swift */,
 				8606412223E5C02F00F04ACD /* SomethingWrongViewController.swift */,
 				8606412423E5EFA600F04ACD /* MarkAttendanceViewController.swift */,
+				8606414923E6FAEA00F04ACD /* EditDetailsViewController.swift */,
 				8606412023E59E1A00F04ACD /* chirpService.swift */,
 				862280EE23C4EE77001028D7 /* SceneDelegate.swift */,
-				862280F023C4EE77001028D7 /* ViewController.swift */,
+				862280F023C4EE77001028D7 /* SettingsViewController.swift */,
 				8606411E23E583F300F04ACD /* ChirpViewController.swift */,
 				8606411C23E581E500F04ACD /* SignUpViewController.swift */,
 				8622810823C504B2001028D7 /* Views */,
 				8622810A23C504C0001028D7 /* Controllers */,
 				862280F223C4EE77001028D7 /* Main.storyboard */,
+				8606414B23E751ED00F04ACD /* Launch Screen.storyboard */,
 				8606412823E678E300F04ACD /* HeadCountUser-Bridging-Header.h */,
 				8606412623E6495A00F04ACD /* LoginViewController.swift */,
 				8622810023C4F1B9001028D7 /* Red_Hat_Display */,
@@ -193,6 +199,7 @@
 				8622810723C504A3001028D7 /* Models in Resources */,
 				862280F923C4EE7A001028D7 /* LaunchScreen.storyboard in Resources */,
 				8622810B23C504C0001028D7 /* Controllers in Resources */,
+				8606414C23E751ED00F04ACD /* Launch Screen.storyboard in Resources */,
 				8622810523C502D8001028D7 /* GoogleService-Info.plist in Resources */,
 				862280F423C4EE77001028D7 /* Main.storyboard in Resources */,
 				8622810123C4F1B9001028D7 /* Red_Hat_Display in Resources */,
@@ -269,9 +276,10 @@
 			files = (
 				8606411B23E581D700F04ACD /* user.swift in Sources */,
 				8606412123E59E1A00F04ACD /* chirpService.swift in Sources */,
-				862280F123C4EE77001028D7 /* ViewController.swift in Sources */,
+				862280F123C4EE77001028D7 /* SettingsViewController.swift in Sources */,
 				8606412323E5C02F00F04ACD /* SomethingWrongViewController.swift in Sources */,
 				862280ED23C4EE77001028D7 /* AppDelegate.swift in Sources */,
+				8606414A23E6FAEA00F04ACD /* EditDetailsViewController.swift in Sources */,
 				862280EF23C4EE77001028D7 /* SceneDelegate.swift in Sources */,
 				8606412523E5EFA600F04ACD /* MarkAttendanceViewController.swift in Sources */,
 				8606411D23E581E500F04ACD /* SignUpViewController.swift in Sources */,

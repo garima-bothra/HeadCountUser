@@ -16,17 +16,32 @@ class SomethingWrongViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
    
     @IBOutlet weak var bypassKey: UITextField!
     @IBAction func submitButton(_ sender: Any) {
         let roomname = bypassKey.text!
         ref.child("rooms").child(roomname).observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let sut = value?["startingUnixTime"] as? String ?? ""
+            if(sut != ""){
             roomref = ref.child("rooms").child(roomname)
+            //self.dismiss(animated: true, completion: nil)
+            self.bypassKey.text = ""
             self.performSegue(withIdentifier: "meetingFound", sender:Any.self)
+            }
+            else
+            {
+                ProgressHUD.showError("Invalid Bypass Key!")
+                self.bypassKey.text = ""
+                self.dismiss(animated: true, completion: nil)
+            }
         }){ (error) in
         print(error.localizedDescription)
+            ProgressHUD.showError("Invalid Bypass Key!")
+            self.bypassKey.text = ""
+            self.dismiss(animated: true, completion: nil)
         }
+        
     }
     /*
     // MARK: - Navigation
